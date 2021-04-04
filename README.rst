@@ -2,11 +2,6 @@
 djangorestframework-csv
 =======================
 
-|build status|_
-
-.. |build status| image:: https://secure.travis-ci.org/mjumbewu/django-rest-framework-csv.png?branch=master
-.. _build status: https://travis-ci.org/mjumbewu/django-rest-framework-csv
-
 **CSV Tools for Django REST Framework**
 
 **Author:** Mjumbe Wawatu Poe, `Follow me on Twitter <http://www.twitter.com/mjumbewu>`_.
@@ -124,6 +119,18 @@ To run the tests against the current environment:
 
     $ ./manage.py test
 
+To test with tox (using pyenv):
+
+.. code-block:: bash
+
+   $ pyenv install 2.7.18
+   $ pyenv install 3.5.10
+   $ pyenv install 3.6.13
+   $ pyenv install 3.7.10
+   $ pyenv install 3.8.8
+   $ pyenv install 3.9.4
+   $ pyenv global 2.7.18 3.5.10 3.6.13 3.7.10 3.8.8 3.9.4
+   $ tox
 
 Changelog
 =========
